@@ -5,7 +5,7 @@ import os
 
 
 app = Flask(__name__)
-template_dir = os.path.abspath('/home/akk1/site/')
+template_dir = os.path.abspath('/kotovadik.github.io/')
 app = Flask(__name__, template_folder=template_dir)
 db_path = os.path.join(os.path.dirname(__file__), 'tasks.db')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + db_path
